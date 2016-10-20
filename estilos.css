@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display");
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Fauna One";
+}
+
+ul, li, ol {
+  padding: 0;
+  margin: 0;
+}
+
+body, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70px;
+  width: 100%;
+  background: #222222;
+}
+
+.menu .menu-pages {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu-pages ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.menu .menu-pages ul li {
+  height: 100%;
+  margin: auto 10px;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu-pages ul li::before {
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  transition: 0.2s;
+  width: 0%;
+  bottom: 0;
+}
+
+.menu .menu-pages ul li:hover:not(.no-select)::before {
+  background: #E9E2C6;
+  width: 100%;
+  left: 0;
+}
+
+.menu .menu-pages ul li a {
+  color: #FCFBFC;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.menu .menu-pages ul li a:hover {
+  color: #E9E2C6;
+}
+
+.menu .menu-pages ul li figure img {
+  height: 40px;
+}
+
+.pagina-wrap:nth-child(2) {
+  background-image: url("fondo-1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.pagina-wrap:nth-child(2)::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("banner-1.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.pagina-wrap section {
+  width: 100%;
+  max-width: 1024px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.pagina-wrap section .logo {
+  min-height: 400px;
+  height: 70vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+}
+
+.pagina-wrap section .logo h1, .pagina-wrap section .logo h2 {
+  margin: 0 auto;
+}
+
+.pagina-wrap section .logo h1 {
+  font-family: "Playfair Display";
+  font-size: 35px;
+  color: #FCFBFC;
+  padding: 2px 10px;
+}
+
+.pagina-wrap section .logo h2 {
+  font-size: 12px;
+  color: #E9E2C6;
+  padding: 3px 6px;
+  font-style: italic;
+  line-height: 5px;
+}
+
+.pagina-wrap section .logo .logo-img {
+  margin: 20px auto;
+}
+
+.pagina-wrap section .logo .logo-img img {
+  width: 300px;
+}
+
+.pagina-wrap article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagina-wrap article:nth-child(odd) .cuadro {
+  -webkit-order: -1;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.pagina-wrap article figure, .pagina-wrap article .cuadro {
+  width: 400px;
+  height: 400px;
+  background: #222222;
+  margin: 0;
+}
+
+.pagina-wrap article figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.pagina-wrap article .cuadro {
+  box-sizing: border-box;
+  padding: 30px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagina-wrap article .cuadro h3 {
+  font-family: "Playfair Display";
+  color: #FCFBFC;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.pagina-wrap article .cuadro h4 {
+  color: #E9E2C6;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.pagina-wrap article .cuadro p {
+  color: #FCFBFC;
+  font-size: 10px;
+  line-height: 1.7em;
+  font-style: italic;
+}
+
+.pagina-wrap article .cuadro hr {
+  width: 20%;
+  border-color: #E9E2C6;
+  margin: 20px 0 10px 0;
+}
