@@ -50,3 +50,6 @@ Temporary Items
 *.cfg
 *.jade
 *.sass
+
+#Carpetas
+psd/

@@ -2,11 +2,16 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8"/>
-    <title>Document</title>
+    <title>Northern Woodsmen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="owl.carousel.js"></script>
     <link rel="stylesheet" href="estilos.css"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1"/>
   </head>
   <body>
     <div class="menu">
+      <input type="checkbox" id="menu-bar"/>
+      <label for="menu-bar" class="icon-bar"></label>
       <div class="menu-pages">
         <ul>
           <li><a href="#">Inicio</a></li>
@@ -15,48 +20,48 @@
           <li><a href="#">Campaña</a></li>
           <li><a href="#">Contacto</a></li>
           <li class="no-select">
-            <figure><img src="logo.png" alt="logo"/></figure>
+            <figure><img src="/img/logo.png" alt="logo"/></figure>
           </li>
           <li><a href="#">Redes</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Busqueda</a></li>
-          <li><a href="#">Compartir</a></li>
-          <li><a href="#">Carrito</a></li>
+          <li><a href="#" class="icon-search">Busqueda</a></li>
+          <li><a href="#" class="icon-share">Compartir</a></li>
+          <li><a href="#" class="icon-shop">Carrito</a></li>
         </ul>
       </div>
     </div>
     <div class="pagina-wrap">
       <section>
         <div class="logo">
-          <div class="logo-img"><img src="logo.png" alt="logo"/></div>
-          <h1>Bienvenido a Marca</h1>
+          <div class="logo-img"><img src="/img/logo.png" alt="logo"/></div>
+          <h1>¡Bienvenido!</h1>
           <h2>Lorem ipsum dolor sit amet</h2>
         </div>
         <article>
-          <figure><img src="img-1.jpg" alt="Pink Floyd"/></figure>
+          <figure><img src="/img/img-1.jpg" alt="Pink Floyd"/></figure>
           <div class="cuadro">
-            <h3>Spring Racing</h3>
-            <h4>Discover the game changers</h4>
+            <h3>La primavera ya está aquí</h3>
+            <h4>Descubre nuestras novedades</h4>
             <hr/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="extra"></div>
           </div>
         </article>
         <article>
-          <figure><img src="img-2.jpg" alt="Michael Kors"/></figure>
+          <figure><img src="/img/img-2.jpg" alt="Michael Kors"/></figure>
           <div class="cuadro">
-            <h3>Instant visual control</h3>
-            <h4>Make more project!</h4>
+            <h3>Colonias</h3>
+            <h4>Una ideal para cada ocación</h4>
             <hr/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="extra"></div>
           </div>
         </article>
         <article>
-          <figure><img src="" alt=""/></figure>
+          <figure><img src="/img/img-3.jpg" alt="Botas"/></figure>
           <div class="cuadro">
-            <h3>An attractive result</h3>
-            <h4>With hundreds of resources</h4>
+            <h3>Botas</h3>
+            <h4>Nunca pasan de moda </h4>
             <hr/>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
@@ -65,62 +70,107 @@
     </div>
     <div class="pagina-wrap">
       <section>
-        <div class="slider"></div>
-        <div class="comentarios">
-          <p>Lo que dicen acerca de Nosotros</p>
-          <div class="info-comentarios">
-            <figure><img src="" alt=""/></figure>
-            <div class="nombre-comentarios"></div>
-            <div class="titulo-comentarios"></div>
-            <p></p>
-          </div>
-          <div class="info-comentarios">
-            <figure><img src="" alt=""/></figure>
-            <div class="nombre-comentarios"></div>
-            <div class="titulo-comentarios"></div>
-            <p></p>
-          </div>
-          <div class="info-comentarios">
-            <figure><img src="" alt=""/></figure>
-            <div class="nombre-comentarios"></div>
-            <div class="titulo-comentarios"></div>
-            <p></p>
+        <div class="slider">
+          <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item">
+              <figure><img src="/img/mues-1.png" alt=""/></figure>
+              <h3>Descubre lo nuevo</h3>
+              <h4>Prendas que no peuden faltarte</h4>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="item">
+              <figure><img src="/img/mues-2.png" alt=""/></figure>
+              <h3>Descubre lo nuevo</h3>
+              <h4>Prendas que no peuden faltarte</h4>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="item">
+              <figure><img src="/img/mues-3.png" alt=""/></figure>
+              <h3>Descubre lo nuevo</h3>
+              <h4>Prendas que no peuden faltarte</h4>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
           </div>
         </div>
+        <div class="comentarios">
+          <h3>Lo que dicen acerca de Nosotros</h3>
+          <div class="box-comentarios">
+            <div class="info-comentarios">
+              <figure><img src="/img/face-3.jpg" alt="Ethan"/></figure>
+              <div class="nombre-comentarios">Ethan West</div>
+              <div class="titulo-comentarios">Blogger</div>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="info-comentarios">
+              <figure><img src="/img/face-2.jpg" alt="Mary"/></figure>
+              <div class="nombre-comentarios">Mary Lances</div>
+              <div class="titulo-comentarios">Publicista</div>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="info-comentarios">
+              <figure><img src="/img/face-1.jpg" alt="Neal"/></figure>
+              <div class="nombre-comentarios">Neal Scott</div>
+              <div class="titulo-comentarios">Manager</div>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="full">
+        <hr/>
         <div class="patrocinadores">
           <div class="info-patrocinadores">
-            <figure><img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
+            <figure><img src="/img/part-1.png" alt=""/></figure>
+            <div class="partner"><img src="/img/part-logo-1.png" alt=""/></div>
           </div>
           <div class="info-patrocinadores">
-            <figure><img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
+            <figure><img src="/img/part-2.png" alt=""/></figure>
+            <div class="partner"><img src="/img/part-logo-2.png" alt=""/></div>
           </div>
           <div class="info-patrocinadores">
-            <figure><img src="" alt=""/>
-              <figcaption></figcaption>
-            </figure>
+            <figure><img src="/img/part-3.png" alt=""/></figure>
+            <div class="partner"><img src="/img/part-logo-3.png" alt=""/></div>
           </div>
         </div>
       </section>
     </div>
     <div class="pagina-wrap">
       <section>
-        <div class="slider-img"></div>
+        <div class="slider-img">
+          <div id="owl-mini-demo" class="owl-carousel owl-theme">
+            <div class="item"> <img src="/img/mini-slider-1.jpg" alt=""/></div>
+            <div class="item"> <img src="/img/mini-slider-2.jpg" alt=""/></div>
+            <div class="item"> <img src="/img/mini-slider-3.jpg" alt=""/></div>
+            <div class="item"> <img src="/img/mini-slider-1.jpg" alt=""/></div>
+            <div class="item"> <img src="/img/mini-slider-2.jpg" alt=""/></div>
+            <div class="item"> <img src="/img/mini-slider-3.jpg" alt=""/></div>
+          </div>
+        </div>
       </section>
     </div>
     <footer>
-      <div class="footer-logo"></div>
-      <div class="contacto">
-        <h5>Contáctanos </h5>
-        <p></p>
+      <div class="info-contacto">
+        <div class="footer-logo separador">
+          <figure><img src="/img/logo.png" alt=""/></figure>
+        </div>
+        <div class="contacto separador">
+          <h5>Contáctanos </h5>
+          <p>Plaza Altamira, Caracas, Venezuela.<br/>Email: hola@mail.com<br/>Teléfono: +00 000 000 00 00<br/></p>
+          <div class="icons"> <a href="https://www.instagram.com/bmarriaga/" class="icon-instagram"></a><a href="https://twitter.com/Bangeluz" class="icon-twitter"></a><a href="https://www.behance.net/bmarriaga" class="icon-behance"></a></div>
+        </div>
+        <div class="recientes separador">
+          <h5>Actividades recientes</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
-      <div class="recientes">
-        <h5>Actividades recientes</h5>
-      </div>
-      <p>PSD to HTML por Brian Marriaga</p>
+      <hr/>
+      <p>PSD to HTML por Brian Marriaga - Propuesta original de <a href="/img/web.jpg">Naughly</a></p>
     </footer>
   </body>
 </html>
