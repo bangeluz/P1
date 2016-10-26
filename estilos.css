@@ -609,10 +609,10 @@ footer p a {
 }
 
 @media (max-width: 1920px) {
-  #owl-demo .owl-item {
+  #owl-demo .owl-wrapper-outer .owl-wrapper .owl-item {
     width: 1024px;
   }
-  #owl-mini-demo .owl-item {
+  #owl-mini-demo .owl-wrapper-outer .owl-wrapper .owl-item {
     width: 341px;
   }
 }
