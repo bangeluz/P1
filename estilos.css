@@ -608,6 +608,15 @@ footer p a {
   color: #E9E2C6;
 }
 
+@media (max-width: 1920px) {
+  #owl-demo .owl-item {
+    width: 1024px;
+  }
+  #owl-mini-demo .owl-item {
+    width: 341px;
+  }
+}
+
 @media (max-width: 1024px) {
   #owl-mini-demo {
     max-width: 850px;
