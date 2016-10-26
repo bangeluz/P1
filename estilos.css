@@ -709,7 +709,7 @@ footer p a {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .pagina-wrap:nth-child(2) {
     background-position: 50%;
   }
