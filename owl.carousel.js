@@ -1476,7 +1476,7 @@ if (typeof Object.create !== "function") {
         paginationNumbers : false,
 
         responsive : true,
-        responsiveRefreshRate : 200,
+        responsiveRefreshRate : 10,
         responsiveBaseWidth : window,
 
         baseClass : "owl-carousel",
@@ -1526,7 +1526,7 @@ $(document).ready(function() {
       navigation : true, // Show next and prev buttons
       slideSpeed : 200,
       paginationSpeed : 400,
-      singleItem : true,
+      singleItem : false,
       pagination : false,
       autoPlay: 5000,
       singleItem: false,
