@@ -1517,7 +1517,7 @@ $(document).ready(function() {
       singleItem : true,
       pagination : true,
       autoPlay: 5000,
-      items: 2,
+      items: 1,
       stopOnHover: true,
   });
 });
@@ -1529,12 +1529,11 @@ $(document).ready(function() {
       singleItem : false,
       pagination : false,
       autoPlay: 5000,
-      singleItem: false,
       stopOnHover : true,
       navigationText:	["<",">"],
       items : 3,
-      itemsDesktop : [1025,2], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsDesktop : [1024,2], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,2], // betweem 900px and 601px
       itemsTablet: [768,1], //2 items between 600 and 0
       itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
   });
